@@ -1,0 +1,461 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+.main_table_wrap {
+    width: 100%;
+}
+
+.main_table_btn {
+    width: 100%;
+    height: 54px;
+    overflow: hidden;
+    background: #fff;
+    font-size: 0;
+}
+
+.main_table_btn a.play_all {
+    width: 78px;
+    margin-left: 4px;
+    margin-right: 0;
+    background-position: 0 0;
+}
+
+.main_table_btn a.play_all:hover {
+    background-position: 0 -24px;
+}
+
+.main_table_btn a.add_all {
+    width: 25px;
+    background-position: -78px 0;
+}
+
+.main_table_btn a.add_all:hover {
+    background-position: -78px -24px;
+}
+
+.main_table_btn a.download_all {
+    background-position: -103px 0;
+}
+
+.main_table_btn a.download_all:hover {
+    background-position: -103px -24px;
+}
+
+.main_table_btn a.phone_all {
+    background-position: -193px 0;
+}
+
+.main_table_btn a.phone_all:hover {
+    background-position: -193px -24px;
+}
+
+.main_table_btn a.delete_all {
+    width: 67px;
+    background-position: -350px 0;
+}
+
+.main_table_btn a.delete_all:hover {
+    background-position: -350px -24px;
+}
+
+.main_table_btn .no_collect_all {
+    width: 67px;
+    background-position: -283px 0;
+}
+
+.main_table_btn .collect_all {
+    width: 67px;
+    background-position: -283px -24px;
+}
+
+.main_table_con {
+    width: 100%;
+    table-layout: fixed;
+    position: relative;
+}
+
+.main_table_con thead tr {
+    height: 28px;
+    background: #f2f2f2;
+}
+
+.main_table_con thead tr td {
+    text-align: left;
+}
+
+.main_table_con thead tr td.bar {
+    padding-left: 20px;
+}
+
+.main_table {
+    width: 100%;
+}
+
+.main_table th,
+.main_table td {
+    height: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break: keep-all;
+}
+
+.main_table th {
+    height: 30px;
+    line-height: 30px;
+}
+
+
+/*.main_table .odd th, .main_table .odd td { background:#fff; }
+.main_table .even th, .main_table .even td { background:#f2f2f2; }*/
+
+.main_table td,
+.main_table th {
+    border-bottom: solid 1px #f2f2f2;
+}
+
+.main_table tr:hover td,
+.main_table tr:hover th {
+    background: #f2f2f2;
+}
+
+.main_table .fct_btn {
+    display: none;
+}
+
+.main_table tr:hover .fct_btn {
+    display: inline-block;
+}
+
+.main_table th {
+    text-align: left;
+}
+
+.main_table th i.n1 {
+    background-position: 0 0;
+}
+
+.main_table th i.n2 {
+    background-position: 0 -14px;
+}
+
+.main_table th i.n3 {
+    background-position: 0 -28px;
+}
+
+.main_table th i.n4 {
+    background-position: 0 -42px;
+}
+
+.main_table th i.n5 {
+    background-position: 0 -56px;
+}
+
+.main_table th i.n6 {
+    background-position: 0 -70px;
+}
+
+.main_table th i.n7 {
+    background-position: 0 -84px;
+}
+
+.main_table th i.n8 {
+    background-position: 0 -98px;
+}
+
+.main_table_con th.num {
+    width: 35px;
+}
+
+.main_table_con th.a_title {
+    /*width: 240px;*/
+}
+
+.main_table_con th.fct {
+    width: 140px;
+}
+
+.main_table_con th.bar {
+    width: 158px;
+    padding-left: 20px;
+}
+
+.main_table_con th.icon {
+    width: 40px;
+}
+
+
+/****列表 start******/
+
+.main_table td.num {
+    width: 35px;
+}
+
+.main_table_con th.source,
+.main_table td.source {
+    width: 35px;
+}
+
+.main_table td.source i.dsf {
+    background-position: -12px 0;
+}
+
+.main_table td.s_title {}
+
+.main_table td.s_title span,
+.main_table td.s_title a,
+.main_table td.a_title a {
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break: keep-all;
+}
+
+.main_table td.s_title span.mv {
+    width: auto;
+    max-width: 130px;
+}
+
+.main_table td.hasprev {
+    padding-left: 0px;
+}
+
+.main_table td.u_title {
+    width: 28%;
+}
+
+.main_table td.u_title a {}
+
+.main_table td.u_title a:hover {
+    color: #499bd4;
+}
+
+.main_table td.u_title span,
+.main_table td.u_title a.piao_icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break: keep-all;
+}
+
+.main_table td.a_title {
+    width: 240px;
+}
+
+.main_table td.a_title span {
+    color: #999;
+}
+
+.main_table td.a_title a:hover {}
+
+.main_table td.fct {
+    width: 140px;
+    text-align: center;
+}
+
+.main_table td.fct a {
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    background: url(../../../common/images/list_play.png) no-repeat;
+    background-size: 92px 23px;
+}
+
+.main_table td.fct a.play {
+    background-position: 0 0;
+    vertical-align: -6px;
+}
+
+.main_table td.bar {
+    width: 158px;
+    padding-left: 20px;
+}
+
+.main_table td.bar b {
+    display: inline-block;
+    width: 140px;
+    height: 7px;
+    background: #cccccc;
+    border-radius: 2px;
+    font-size: 0;
+}
+
+.main_table td.icon {
+    width: 40px;
+}
+
+.main_table td.icon i.sq {
+    background-position: 0 0;
+}
+
+.main_table td.icon i.hq {
+    background-position: 0 -9px;
+}
+
+.main_table td.space {
+    width: 25px;
+    font-size: 0;
+}
+
+
+/*-- 列表end --*/
+
+.main_table.big th,
+.main_table.big td {
+    height: 49px;
+    line-height: 49px;
+}
+
+.main_table.big th {
+    width: 85px;
+    font-size: 16px;
+}
+
+.main_big_table th.img,
+.main_table.big td.img {
+    width: 50px;
+}
+
+.main_table.big td.img i.up_icon {
+    width: 8px;
+    height: 10px;
+    background-position: 0 0;
+}
+
+.main_table.big td.img i.down_icon {
+    width: 8px;
+    height: 10px;
+    background-position: -8px 0;
+}
+
+.main_table.big td.img i.new_icon {
+    width: 11px;
+    height: 11px;
+    background-position: -16px 0;
+}
+
+.main_table.big td.img i.equal_icon {
+    width: 6px;
+    height: 2px;
+    background-position: -27px 0;
+}
+
+.main_table.big td.img img {
+    height: 32px;
+    line-height: 32px;
+}
+
+.main_big_table th.s_title,
+.main_table.big .s_title {
+    width: 160px;
+    padding-left: 15px;
+}
+
+.main_big_table th.a_title,
+.main_table.big .a_title {
+    width: 145px;
+}
+
+.main_table.big td.s_title a.mv_icon {
+    margin-top: 19px;
+}
+
+.main_table.big td.s_title span.mv {
+    max-width: 120px;
+}
+
+.main_table .num {
+    width: 35px;
+    text-align: center;
+}
+
+.main_table th.num {
+    text-align: left
+}
+
+.main_table th.a_title {
+    width: 28%;
+}
+
+.main_table th.bar {
+    width: 198px;
+    padding-left: 20px;
+}
+
+.main_table th.icon {
+    width: 48px;
+}
+
+.main_table_con .u_title,
+.main_table_con .a_title {
+    text-align: left;
+}
+
+.on {
+    background-color: #f2f2f2;
+    /*color: #fff;*/
+}
+
+
+/*.on a {
+    color: #fff;
+}*/
+
+
+/*.on u_title a:hover,
+.on s_title a:hover,
+.on a_title a:hover {
+    color: #fff;
+}*/
+
+.main_table .on th,
+.main_table .on td,
+.main_table .on th a,
+.main_table .on td a {
+    background-color: #f2f2f2;
+    /*color: #fff;*/
+}
+
+.main_table td.u_title a:hover,
+.main_table td.s_title a:hover,
+.main_table td.a_title a:hover {
+    color: #499bd4;
+}
+
+
+/*.main_table .on td.u_title a:hover,
+.main_table .on td.s_title a:hover,
+.main_table .on td.a_title a:hover {
+    color: #fff;
+}*/
+
+.main_table tr.on:hover td,
+.main_table tr.on:hover th {
+    background: #f2f2f2;
+}
+
+.main_table tr.on td.fct a {
+    display: inline-block;
+    width: 21px;
+    height: 20px;
+    background: url(../../../common/images/play_small.png) no-repeat;
+}
+
+.main_table tr.on td.fct a.play {
+    background-position: 0 0;
+    vertical-align: -6px;
+}
+
+.main_table .el-loading-spinner .el-loading-text {
+    color: #499bd4;
+}
+
+.main_table .el-loading-spinner .path {
+    color: #499bd4;
+}

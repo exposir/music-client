@@ -1,0 +1,217 @@
+.twocenter {
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    box-pack: center;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    box-align: center;
+    position: relative;
+}
+
+.twocenterimg {
+    background: url("../images/icon_jg.png") no-repeat;
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    left: 41px;
+    top: 40px;
+}
+
+.loadingbox,
+.tipsbox,
+.confirmDialogBox {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    animation: fadeIn 0s .2s ease both;
+    z-index: 19999;
+    margin-top: -21px;
+    margin-left: -129px;
+}
+
+.confirmDialogBox {
+    margin-top: -106px !important;
+}
+
+.tipsbox span {
+    display: flex;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 0 30px;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 30px;
+    position: relative;
+    font-size: 14px;
+}
+
+.tipsbox span i {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    position: relative;
+    top: 12px;
+    margin-right: 10px;
+    background: url("../images/tips_icon.png") no-repeat;
+    background-size: auto 100%;
+}
+
+.tipsbox span i.hide {
+    display: none;
+}
+
+.tipsbox span i.success {
+    background-position: 0 0;
+}
+
+.tipsbox span i.warning {
+    background-position: -26px 0;
+}
+.tipsbox span i.error {
+    background-position: -26px 0;
+}
+.tipsbox.hide {
+    -webkit-animation: fadeIn 0s .5s ease both;
+    -moz-animation: fadeIn 0s .5s ease both;
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.el-pagination {
+    text-align: center
+}
+
+.confirmDialogBox {
+    /* padding-left: 192px; */
+    box-sizing: border-box;
+}
+
+.confirmDialogBox .detailbox {
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 2px 0 16px 2px rgba(0, 0, 0, 0.2);
+    color: #4e4e4e;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.confirmDialogBox .detailbox .title {
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+    text-align: left;
+    padding-left: 30px;
+    font-size: 16px;
+}
+
+.confirmDialogBox .detailbox .closebtn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+.confirmDialogBox .detailbox .closebtn:before,
+.confirmDialogBox .detailbox .closebtn:after {
+    content: "";
+    position: absolute;
+    background: #bdbdbd;
+}
+
+.confirmDialogBox .detailbox .closebtn:before {
+    top: 9px;
+    left: 0;
+    width: 20px;
+    height: 2px;
+}
+
+.confirmDialogBox .detailbox .closebtn:after {
+    top: 0;
+    left: 9px;
+    width: 2px;
+    height: 20px;
+}
+
+.confirmDialogBox .detailbox .content {
+    padding: 50px 30px 42px 93px;
+    font-size: 16px;
+    min-width: 300px;
+    text-align: left;
+}
+
+.confirmDialogBox .detailbox .btnsbox {
+    font-size: 0;
+    padding: 0 30px;
+}
+
+.confirmDialogBox .detailbox .btnsbox span {
+    display: inline-block;
+    font-size: 14px;
+    color: #333333;
+    /* background: #c9c9c9; */
+    border:1px solid #e7e7e7;
+    border-radius: 2px;
+    width: 98px;
+    height: 28px;
+    line-height: 28px;
+    cursor: pointer;
+    border-radius: 28px;
+}
+
+.confirmDialogBox .detailbox .btnsbox span:first-child {
+    background: #e13228;
+    margin-right: 22px;
+    color: #ffffff;
+}
+
+img[lazy=loading] {
+    width: 100%;
+    height: 100%;
+}
+
+img[lazy=error] {
+    width: 100%;
+    height: 100%;
+}
+
+.v-modal {
+    background: transparent;
+}

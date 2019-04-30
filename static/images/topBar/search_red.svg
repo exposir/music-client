@@ -1,0 +1,14 @@
+<svg id="icon_放大镜" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #e13228;
+        stroke-width: 2px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="椭圆_57" data-name="椭圆 57" class="cls-1" d="M2.7,2.2a5.995,5.995,0,1,1,0,8.482A6,6,0,0,1,2.7,2.2Z"/>
+  <path id="矩形_2055" data-name="矩形 2055" class="cls-1" d="M10.475,11.389l1.414-1.414L14.01,12.1,12.6,13.51Z"/>
+</svg>

@@ -1,0 +1,10 @@
+
+export const DOWNLOAD_RESULT_NOT_START = 0;  //
+export const DOWNLOAD_RESULT_DOWNLOADING = 1;
+export const DOWNLOAD_RESULT_WAITING = 2;
+export const DOWNLOAD_RESULT_FINISHED = 4;
+export const DOWNLOAD_RESULT_ERROR = 5;
+export const DOWNLOAD_RESULT_STOPPED = 6;
+export const DOWNLOAD_RESULT_DESTORYED = 7;
+export const DOWNLOAD_NEED_VIP = 8;
+export const DOWNLOAD_NEED_BUY = 9;

@@ -1,0 +1,306 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+.search_result {
+    background: #fff;
+}
+
+.search_banner {
+    position: relative;
+    z-index: 1;
+    height: 72px;
+    background: #fafafa;
+}
+
+.search_banner span {
+    display: inline-block;
+    height: 72px;
+    line-height: 82px;
+    width: 420px;
+    margin-left: 34px;
+    font-size: 14px;
+    color: #333333;
+}
+
+.search_banner span b {
+    color: #e13228;
+}
+
+.search_banner span b.qword {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 180px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break: keep-all;
+    padding: 0 5px;
+    color: #e13228;
+    line-height: 82px;
+}
+
+.search_banner #searchAd {
+    position: relative;
+    float: right;
+    width: 320px;
+    height: 72px;
+    cursor: pointer;
+}
+
+.search_banner #searchAd img {
+    width: 320px;
+    height: 72px;
+    border: none;
+    zoom: 1;
+}
+
+
+/*-- --*/
+
+.search_tab {
+    width: 100%;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+    padding: 0 17px;
+}
+
+.search_tab ul {
+    margin-right: 25px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.search_tab ul li a {
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+    font-size: 14px;
+    text-align: center;
+}
+
+.search_tab ul li.visited a {
+    color: #e13228;
+    background: url('~static/images/line2.svg') no-repeat left bottom;
+}
+
+.search_tab li.disable {}
+
+.search_tab li.disable a {
+    color: #bebebe;
+    cursor: default;
+}
+
+.search_list {
+    padding: 0 17px;
+}
+
+.search_list ul li {
+    height: 72px;
+    border-bottom: solid 1px #f2f2f2;
+    overflow: hidden;
+}
+
+.search_list ul li.odd {
+    background: #fff;
+}
+
+.search_list ul li.even {
+    background: #f7f7f7;
+}
+
+.search_list ul li .img_border,
+.search_list ul li .text_border {
+    float: left;
+}
+
+.search_list ul li .img_border {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 25px;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    border: solid 1px #f2f2f2;
+}
+
+.search_singer_list.search_list ul li .img_border {
+    border: none;
+}
+
+.search_list ul li.even .img_border {
+    background-position: right 0;
+}
+
+.search_list ul li .img_border img {
+    width: 50px;
+    height: 50px;
+}
+
+.search_list ul li .img_border img[lazy=loading] {
+    width: 32px;
+    height: 32px;
+}
+
+.search_list ul li .img_border img[lazy=error] {
+    width: 32px;
+    height: 32px;
+}
+
+.search_list ul li .img_border .play_btn {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 28px;
+    height: 28px;
+    margin-left: -14px;
+    margin-top: -14px;
+    background: url(../images/btn_s_7.png) no-repeat;
+    display: none;
+}
+
+.search_list ul li .img_border:hover .play_btn {
+    display: inline-block;
+}
+
+.search_list ul li .img_border .play_btn:hover {
+    background-position: -28px 0;
+}
+
+.search_list ul li .img_border .img_layer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, .5);
+}
+
+.search_list ul li .text_border {
+    margin-top: 8px;
+    margin-left: 25px;
+    color: #535353;
+}
+
+.search_list ul li.on .text_border {
+    /*color: #fff;*/
+}
+
+.search_list ul li .text_border .s_title {
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+    max-width: 660px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.search_list ul li .text_border .s_title a {
+    font-size: 14px;
+}
+
+.search_list ul li .text_border .s_title a:hover {
+    color: #e13228;
+}
+
+.search_list ul li.search_li_click .text_border .s_title a:hover {
+    color: #fff;
+}
+
+.search_list ul li .text_border .msg_title {
+    height: 22px;
+    line-height: 22px;
+}
+
+.search_list ul li .text_border .msg_title span {
+    margin-right: 20px;
+}
+
+
+/*-- --*/
+
+#errorSearch {
+    position: relative;
+    width: 100%;
+    height: 351px;
+    background: #fff url(/2016/resources/images/default/bg_1.jpg) center 120px no-repeat;
+}
+
+#errorSearch .content {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 300px;
+    margin-top: 17px;
+}
+
+#errorSearch .content .text {
+    color: #636363;
+    font-size: 16px;
+}
+
+.qword {
+    color: #e13228;
+    font-style: normal;
+}
+
+.main_table .on .qword {
+    color: #fff;
+}
+
+.on .qword,
+.search_li_click .qword {
+    color: #fff;
+}
+
+.new_search_list a:hover {
+    color: #e13228;
+}
+
+.new_search_list .on a:hover .qword,
+.new_search_list .search_li_click a:hover .qword {
+    color: #fff!important;
+}
+
+
+/*.new_search_list .main_table .on td.s_title span{
+    color: #fff;    
+}*/
+
+.search_tab ul .link_disabled a {
+    color: #dadada;
+}
+
+.search_singer_list img {
+    border-radius: 50%;
+}
+
+.search_list li:hover {
+    background: #f2f2f2;
+}
+
+.search_list li.on:hover {
+    background: #f2f2f2;
+}
+
+.no-content-tips-box {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+.highlight {
+    color: #e13228;
+}

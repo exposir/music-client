@@ -1,0 +1,90 @@
+/* dialog_layer */
+
+.dialog_layer {
+    width: 348px;
+    height: 208px;
+    border: 1px solid #ededed;
+    overflow: hidden;
+    position: absolute;
+    z-index: 10000;
+    background: #ffffff;
+    top: 50%;
+    left: 50%;
+    margin-top: -104px;
+    margin-left: -174px;
+}
+
+.dialog_layer_title {
+    height: 37px;
+    width: 100%;
+    background: #efefef;
+}
+
+.dialog_layer_title span {
+    display: inline-block;
+    height: 37px;
+    line-height: 37px;
+    margin-left: 20px;
+    overflow: hidden;
+    font-size: 14px;
+}
+
+.dialog_layer_title a.close {
+    float: right;
+    height: 35px;
+    width: 32px;
+    background: url(../images/btn_9.jpg) no-repeat;
+}
+
+.dialog_layer_title a.close:hover {
+    background-position: -32px 0;
+}
+
+.dialog_layer_wrap {}
+
+.dialog_layer_btn {
+    text-align: center;
+}
+
+.dialog_layer_btn a {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.dialog_layer a {
+    width: 105px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background: #ededed;
+    margin: 0 10px;
+}
+
+.dialog_layer_btn a.submit {
+    background: #ffb200;
+    color: #fff;
+}
+
+.dialog_layer_btn .submit:hover {
+    background: #ffba1a;
+}
+
+.dialog_layer_btn a.cancel {
+    background: #b1b1b1;
+    color: #fff;
+}
+
+.dialog_layer_btn .cancel:hover {
+    background: #b9b9b9;
+}
+
+div.v-modal {
+    background: none;
+}
+
+.el-dialog {
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
+}
+
+
+/**/

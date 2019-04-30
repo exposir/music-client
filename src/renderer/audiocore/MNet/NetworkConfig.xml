@@ -1,0 +1,8 @@
+<NetParam>
+    <modules>
+        <module id="5" path="MLocalData.dll" />
+        <module id="4" path="MNet.dll" />
+        <module id="2" path="MUpDownload.dll" />
+        <module id="7" path="MFeedback.dll" />
+    </modules>
+</NetParam>
